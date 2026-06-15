@@ -2,7 +2,7 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Toronto Electrical Experts | Engineering Excellence</title>
+<title>Toronto Electrical Experts | Only Trust The Experts</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -12,12 +12,12 @@
             theme: {
                 extend: {
                     "colors": {
-                        "primary": "#003d22", // Deep forest green from Ease
+                        "primary": "#003d22",
                         "on-primary": "#ffffff",
                         "secondary": "#34694a",
                         "background": "#ffffff",
                         "surface": "#f9f9ff",
-                        "surface-container-low": "#c4edc4", // Soft sage background
+                        "surface-container-low": "#c4edc4",
                         "surface-container-high": "#e8eeff",
                         "on-surface": "#111c2d",
                         "on-surface-variant": "#414942",
@@ -52,152 +52,164 @@
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         .ease-card { border-radius: 2.5rem; overflow: hidden; }
         .hero-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 24px; }
-        @media (max-width: 1024px) { .hero-layout { grid-template-columns: 1fr; } }
+        @media (max-width: 1024px) { .hero-layout { grid-template-columns: 1fr; } .ease-card { border-radius: 1.75rem; } }
     </style>
 </head>
 <body class="antialiased">
 <!-- Navigation -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md px-margin h-24 flex items-center justify-between border-b border-outline-variant/30">
-<div class="flex items-center gap-16">
-<span class="font-serif-display text-3xl font-bold text-primary tracking-tight">Toronto Electrical Experts</span>
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md px-4 sm:px-6 lg:px-margin h-20 lg:h-24 flex items-center justify-between border-b border-outline-variant/30 gap-3">
+<div class="flex items-center gap-6 xl:gap-16 min-w-0">
+<span class="font-serif-display text-lg sm:text-2xl lg:text-3xl font-bold text-primary tracking-tight truncate">Toronto Electrical Experts</span>
 <div class="hidden lg:flex gap-10 items-center">
-<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">Residential</a>
-<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">Commercial</a>
-<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">Engineering</a>
-<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#services">Residential</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#services">Commercial</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#services">Industrial</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#areas">Service Areas</a>
 </div>
 </div>
-<div class="flex items-center gap-8">
-<div class="hidden xl:flex items-center gap-3">
+<div class="flex items-center gap-4 lg:gap-8 shrink-0">
+<a href="tel:+14166359494" class="hidden xl:flex items-center gap-3">
 <span class="material-symbols-outlined text-primary" data-icon="call">call</span>
-<span class="text-sm font-bold text-primary">(416) 555-0198</span>
-</div>
-<button class="bg-primary text-on-primary px-10 py-4 rounded-full text-sm font-bold tracking-wide hover:opacity-90 transition-all active:scale-95">
-            BOOK A CONSULTATION
-            </button>
+<span class="text-sm font-bold text-primary">416-635-9494</span>
+</a>
+<a href="tel:+14166359494" class="bg-primary text-on-primary px-4 sm:px-6 lg:px-10 py-2.5 lg:py-4 rounded-full text-xs sm:text-sm font-bold tracking-wide hover:opacity-90 transition-all active:scale-95 whitespace-nowrap">
+            <span class="sm:hidden">CALL US</span><span class="hidden sm:inline">BOOK A CONSULTATION</span>
+            </a>
 </div>
 </nav>
-<main class="mt-24 pt-8 px-margin max-w-[1600px] mx-auto">
+<main class="mt-20 lg:mt-24 pt-6 lg:pt-8 px-4 sm:px-6 lg:px-margin max-w-[1600px] mx-auto">
 <!-- Hero Section: Ease Layout -->
-<section class="hero-layout min-h-[700px] mb-8">
+<section class="hero-layout lg:min-h-[700px] mb-6 lg:mb-8">
 <!-- Left Column: Content Cards -->
-<div class="flex flex-col gap-6">
-<div class="ease-card bg-surface-container-low p-16 flex-grow flex flex-col justify-center">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/40 text-primary font-bold text-[10px] tracking-widest uppercase mb-10 w-fit">
+<div class="flex flex-col gap-4 lg:gap-6">
+<div class="ease-card bg-surface-container-low p-7 sm:p-10 lg:p-16 flex-grow flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/40 text-primary font-bold text-[10px] tracking-widest uppercase mb-6 lg:mb-10 w-fit">
 <span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
                         ESTABLISHED 1989
                     </div>
-<h1 class="font-serif-display text-[64px] leading-[1.05] text-primary mb-10">
+<h1 class="font-serif-display text-4xl sm:text-5xl lg:text-[64px] leading-[1.08] lg:leading-[1.05] text-primary mb-6 lg:mb-10">
                         Precision engineering for Toronto's power.
                     </h1>
-<p class="text-on-surface-variant text-xl leading-relaxed max-w-md opacity-80">
+<p class="text-on-surface-variant text-base sm:text-lg lg:text-xl leading-relaxed max-w-md opacity-80">
                         Delivering high-end residential and complex commercial electrical solutions across the GTA with 35+ years of excellence.
                     </p>
 </div>
-<button class="ease-card bg-primary text-on-primary p-12 group flex items-center justify-between hover:opacity-95 transition-all">
-<span class="text-2xl font-bold">Request a Site Audit</span>
-<span class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
-</button>
+<a href="mailto:info@torontoelectricalexperts.com?subject=Site%20Audit%20Request" class="ease-card bg-primary text-on-primary p-7 sm:p-10 lg:p-12 group flex items-center justify-between gap-4 hover:opacity-95 transition-all">
+<span class="text-xl lg:text-2xl font-bold">Request a Site Audit</span>
+<span class="material-symbols-outlined text-3xl lg:text-4xl shrink-0 group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
 </div>
 <!-- Right Column: Visual Showcase -->
-<div class="ease-card bg-slate-100 relative group overflow-hidden">
+<div class="ease-card bg-slate-100 relative group overflow-hidden min-h-[440px] lg:min-h-0">
 <img alt="Electrical Engineering Precision" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJBoZHViXVvVEudONqfMZSY6Ppu8Ot7Dn9P6F-10Zo4l0Se-uzP8Ba_9YVa3tEU4EdjeRqFkgEbYlc7fv0YAf8R4uJ8aBUMrv5lFY607dNDHpcBaefQVybZPt1cJjY2qbuRGKJfAs_LntWri1EgMIH2PjrV1HMonES_7Bex1JFERG4esQ0e8SA8xksYAfdbqmrDcSZeO24E6r6OUBNwBrWm9FCuWrJjVMjvCMpLKnzZQgvMBsjqQnYJ47EW8g0uAXub1uLj_GPrlQ"/>
 <div class="absolute inset-0 bg-primary/5"></div>
 <!-- Aesthetic Floaters inspired by Ease -->
-<div class="absolute bottom-10 left-10 right-10 flex gap-4">
-<div class="bg-white/90 backdrop-blur p-6 rounded-3xl shadow-xl flex-1 flex items-center gap-4">
-<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary">
+<div class="absolute bottom-4 left-4 right-4 lg:bottom-10 lg:left-10 lg:right-10 flex flex-col sm:flex-row gap-3 lg:gap-4">
+<div class="bg-white/90 backdrop-blur p-4 lg:p-6 rounded-2xl lg:rounded-3xl shadow-xl flex-1 flex items-center gap-3 lg:gap-4">
+<div class="w-10 h-10 lg:w-12 lg:h-12 rounded-xl lg:rounded-2xl bg-surface-container-low flex items-center justify-center text-primary shrink-0">
 <span class="material-symbols-outlined" data-icon="bolt">bolt</span>
 </div>
 <div>
-<div class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">ESA License</div>
-<div class="text-sm font-bold text-primary">#7012345 Certified</div>
+<div class="text-[10px] lg:text-xs font-bold text-on-surface-variant uppercase tracking-widest">ESA License</div>
+<div class="text-xs lg:text-sm font-bold text-primary">ECRA/ESA 701048</div>
 </div>
 </div>
-<div class="bg-white/90 backdrop-blur p-6 rounded-3xl shadow-xl flex-1 flex items-center gap-4">
-<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary">
+<div class="bg-white/90 backdrop-blur p-4 lg:p-6 rounded-2xl lg:rounded-3xl shadow-xl flex-1 flex items-center gap-3 lg:gap-4">
+<div class="w-10 h-10 lg:w-12 lg:h-12 rounded-xl lg:rounded-2xl bg-surface-container-low flex items-center justify-center text-primary shrink-0">
 <span class="material-symbols-outlined" data-icon="security">security</span>
 </div>
 <div>
-<div class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Insurance</div>
-<div class="text-sm font-bold text-primary">Fully Bonded &amp; WSIB</div>
+<div class="text-[10px] lg:text-xs font-bold text-on-surface-variant uppercase tracking-widest">Insurance</div>
+<div class="text-xs lg:text-sm font-bold text-primary">Fully Bonded &amp; WSIB</div>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- Trust Bar -->
-<section class="py-16 border-b border-outline-variant/20">
-<div class="flex flex-wrap items-center justify-center gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-<span class="font-serif-display text-2xl font-bold">ESA</span>
-<span class="font-serif-display text-2xl font-bold">WSIB Ontario</span>
-<span class="font-serif-display text-2xl font-bold">OEL</span>
-<span class="font-serif-display text-2xl font-bold">IEEE</span>
-<span class="font-serif-display text-2xl font-bold">NFPA</span>
+<section class="py-10 lg:py-16 border-b border-outline-variant/20">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 lg:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+<span class="font-serif-display text-lg lg:text-2xl font-bold">ESA</span>
+<span class="font-serif-display text-lg lg:text-2xl font-bold">WSIB Ontario</span>
+<span class="font-serif-display text-lg lg:text-2xl font-bold">OEL</span>
+<span class="font-serif-display text-lg lg:text-2xl font-bold">IEEE</span>
+<span class="font-serif-display text-lg lg:text-2xl font-bold">NFPA</span>
 </div>
 </section>
 <!-- Services Section -->
-<section class="py-section-gap">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
-<div class="ease-card bg-surface-container-low p-20 flex flex-col justify-between min-h-[600px]">
-<h2 class="font-serif-display text-[56px] leading-[1.1] text-primary">
+<section id="services" class="py-16 sm:py-24 lg:py-section-gap scroll-mt-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 mb-6 lg:mb-12">
+<div class="ease-card bg-surface-container-low p-8 sm:p-12 lg:p-20 flex flex-col justify-between lg:min-h-[600px]">
+<h2 class="font-serif-display text-3xl sm:text-4xl lg:text-[56px] leading-[1.15] lg:leading-[1.1] text-primary">
                         Bring reliability back into your power systems.
                     </h2>
-<p class="text-lg text-on-surface-variant max-w-md mt-12 mb-20">
+<p class="text-base lg:text-lg text-on-surface-variant max-w-md mt-6 lg:mt-12 mb-10 lg:mb-20">
                         Join the hundreds of Toronto property owners who trust our engineering-first approach to complex electrical challenges.
                     </p>
-<div class="space-y-6">
-<div class="flex items-center gap-4 border-b border-primary/10 pb-6">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="home_work">home_work</span>
-<span class="text-xl font-semibold text-primary">Luxury Residential Upgrades</span>
+<div class="space-y-5 lg:space-y-6">
+<div class="flex items-center gap-4 border-b border-primary/10 pb-5 lg:pb-6">
+<span class="material-symbols-outlined text-primary text-2xl lg:text-3xl shrink-0" data-icon="home_work">home_work</span>
+<span class="text-lg lg:text-xl font-semibold text-primary">Luxury Residential Upgrades</span>
 </div>
-<div class="flex items-center gap-4 border-b border-primary/10 pb-6">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="precision_manufacturing">precision_manufacturing</span>
-<span class="text-xl font-semibold text-primary">Commercial &amp; Industrial Systems</span>
+<div class="flex items-center gap-4 border-b border-primary/10 pb-5 lg:pb-6">
+<span class="material-symbols-outlined text-primary text-2xl lg:text-3xl shrink-0" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="text-lg lg:text-xl font-semibold text-primary">Commercial &amp; Industrial Systems</span>
 </div>
 </div>
 </div>
-<div class="flex flex-col gap-12">
-<div class="ease-card h-[300px] relative">
+<div class="flex flex-col gap-6 lg:gap-12">
+<div class="ease-card h-[240px] lg:h-[300px] relative">
 <img alt="Professional electrical diagnostics" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4OFNQFp8U2pTHssB-EnyY3uzwKjakoVuPsNnogPYgzL7sTGs5lg0rV9xiZM5uUmMoOJTT95T11mCValWF2lpG-Fm9BspM5dcLS2PMuK-bZpcTL6B7eUMVv3Org2QAbbmzcmBbJrmLdljDRHMGsvmLvIyxPVlG_mTO5ZT8hV96W6FYjDXEZXrbdNND39R1NW-8QwBACRdnEyzlvmSUVnaXmbc_C1HuA1sRoWhVgQo_u35QQw5X4rIq8pnVpLVI75U4LXWc6nUlJ4M"/>
 <div class="absolute inset-0 bg-primary/20"></div>
 </div>
-<div class="ease-card bg-primary text-on-primary p-12 flex-grow flex flex-col justify-center">
-<div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8">
+<div class="ease-card bg-primary text-on-primary p-8 sm:p-10 lg:p-12 flex-grow flex flex-col justify-center">
+<div class="w-14 h-14 lg:w-16 lg:h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-6 lg:mb-8">
 <span class="material-symbols-outlined text-3xl" data-icon="emergency">emergency</span>
 </div>
-<h3 class="font-serif-display text-4xl mb-6">24/7 Technical Response</h3>
-<p class="text-on-primary/70 text-lg mb-8">Rapid intervention for critical system failures, hazardous faults, and commercial outages across the GTA.</p>
-<div class="flex items-center gap-3 font-bold text-xl">
+<h3 class="font-serif-display text-3xl lg:text-4xl mb-4 lg:mb-6">24/7 Technical Response</h3>
+<p class="text-on-primary/70 text-base lg:text-lg mb-6 lg:mb-8">Rapid intervention for critical system failures, hazardous faults, and commercial outages across the GTA.</p>
+<a href="tel:+14166359494" class="flex items-center gap-3 font-bold text-lg lg:text-xl hover:opacity-80 transition-opacity">
 <span class="material-symbols-outlined" data-icon="headset_mic">headset_mic</span>
-                            (416) 555-0199
-                        </div>
+                            416-635-9494
+                        </a>
 </div>
 </div>
 </div>
 </section>
 <!-- Service Areas: Map Integration -->
-<section class="py-section-gap border-t border-outline-variant/20">
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+<section id="areas" class="py-16 sm:py-24 lg:py-section-gap border-t border-outline-variant/20 scroll-mt-24">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
 <div class="lg:col-span-1">
-<h2 class="font-serif-display text-5xl text-primary mb-8">Serving the GTA.</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-10">Strategic rapid-response units stationed throughout Toronto for minimum arrival times.</p>
-<div class="grid grid-cols-2 gap-4">
-<div class="p-4 rounded-2xl bg-surface-container-low text-sm font-bold text-primary flex items-center gap-2">
-<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Old Toronto
+<h2 class="font-serif-display text-3xl sm:text-4xl lg:text-5xl text-primary mb-5 lg:mb-8">Serving the GTA.</h2>
+<p class="text-on-surface-variant text-base lg:text-lg leading-relaxed mb-8 lg:mb-10">Strategic rapid-response units stationed throughout Toronto and the surrounding regions for minimum arrival times.</p>
+<div class="grid grid-cols-2 gap-3 lg:gap-4">
+<div class="p-3 lg:p-4 rounded-xl lg:rounded-2xl bg-surface-container-low text-xs lg:text-sm font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Toronto
                         </div>
-<div class="p-4 rounded-2xl bg-surface-container-low text-sm font-bold text-primary flex items-center gap-2">
+<div class="p-3 lg:p-4 rounded-xl lg:rounded-2xl bg-surface-container-low text-xs lg:text-sm font-bold text-primary flex items-center gap-2">
 <span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Mississauga
                         </div>
-<div class="p-4 rounded-2xl bg-surface-container-low text-sm font-bold text-primary flex items-center gap-2">
-<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Etobicoke
-                        </div>
-<div class="p-4 rounded-2xl bg-surface-container-low text-sm font-bold text-primary flex items-center gap-2">
+<div class="p-3 lg:p-4 rounded-xl lg:rounded-2xl bg-surface-container-low text-xs lg:text-sm font-bold text-primary flex items-center gap-2">
 <span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Vaughan
                         </div>
+<div class="p-3 lg:p-4 rounded-xl lg:rounded-2xl bg-surface-container-low text-xs lg:text-sm font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Markham
+                        </div>
+<div class="p-3 lg:p-4 rounded-xl lg:rounded-2xl bg-surface-container-low text-xs lg:text-sm font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Richmond Hill
+                        </div>
+<div class="p-3 lg:p-4 rounded-xl lg:rounded-2xl bg-surface-container-low text-xs lg:text-sm font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Etobicoke
+                        </div>
+<div class="p-3 lg:p-4 rounded-xl lg:rounded-2xl bg-surface-container-low text-xs lg:text-sm font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> Scarborough
+                        </div>
+<div class="p-3 lg:p-4 rounded-xl lg:rounded-2xl bg-surface-container-low text-xs lg:text-sm font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span> North York
+                        </div>
 </div>
 </div>
-<div class="lg:col-span-2 ease-card h-[500px] relative bg-slate-100">
+<div class="lg:col-span-2 ease-card h-[280px] lg:h-[500px] relative bg-slate-100">
 <img alt="Toronto Service Coverage" class="absolute inset-0 w-full h-full object-cover grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAuptkzT54AANVrDJXo4l_faOIvR1KHHsLQ2x-_g1Cs-zavzmNUJr9TRHGfNmrXmzS21D3Ck-yJLP3siZiU402YIeCRMPc_3Up9rxfvic_Y-rz-FBFS5CQHWvlj5IPLk0iXDg1nWo5HaDXPqxhuSc9hnVUe6Y9udAkCMdNOim-rqUrgW_2_-WMxnHq2Z5MWM0gjm5JFEvEzEOB-07l1v-i3wNfjzzLuAcQ3G76QZwx-pm6G1KzvosIsb4e8Ob9n9w9BDB4Kb3YzjY"/>
 <div class="absolute inset-0 flex items-center justify-center">
 <div class="w-12 h-12 bg-primary rounded-full animate-ping opacity-25"></div>
@@ -207,58 +219,59 @@
 </div>
 </section>
 <!-- Final CTA: Bold Ease Style -->
-<section class="py-section-gap">
-<div class="ease-card bg-primary p-20 lg:p-32 text-center text-on-primary">
-<h2 class="font-serif-display text-[64px] leading-[1.05] mb-12">Start your project audit.</h2>
-<p class="text-2xl text-on-primary/70 mb-16 max-w-2xl mx-auto">
+<section class="py-16 sm:py-24 lg:py-section-gap">
+<div class="ease-card bg-primary p-8 sm:p-14 lg:p-32 text-center text-on-primary">
+<h2 class="font-serif-display text-3xl sm:text-5xl lg:text-[64px] leading-[1.1] lg:leading-[1.05] mb-6 lg:mb-12">Start your project audit.</h2>
+<p class="text-base sm:text-xl lg:text-2xl text-on-primary/70 mb-8 lg:mb-16 max-w-2xl mx-auto">
                     Get an expert engineering assessment and a detailed line-item quote within 24 hours.
                 </p>
-<button class="bg-white text-primary px-16 py-6 rounded-full text-xl font-bold group flex items-center gap-4 mx-auto hover:scale-105 transition-all">
+<a href="tel:+14166359494" class="bg-white text-primary px-8 sm:px-12 lg:px-16 py-4 lg:py-6 rounded-full text-base lg:text-xl font-bold group inline-flex items-center gap-3 lg:gap-4 mx-auto hover:scale-105 transition-all">
                     BOOK NOW <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
-</button>
+</a>
 </div>
 </section>
 </main>
 <!-- Footer: Ease Layout -->
-<footer class="bg-surface-container-low px-margin py-32 mt-12 rounded-t-[40px]">
-<div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-24">
+<footer class="bg-surface-container-low px-5 sm:px-8 lg:px-margin py-16 lg:py-32 mt-8 lg:mt-12 rounded-t-[28px] lg:rounded-t-[40px]">
+<div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
 <div class="lg:col-span-5 flex flex-col justify-between">
 <div>
-<span class="font-serif-display text-4xl font-bold text-primary">Toronto Electrical Experts</span>
-<p class="mt-8 text-lg text-primary/60 max-w-sm">The GTA's premier electrical engineering firm since 1989. Professional integrity and safety at our core.</p>
+<span class="font-serif-display text-3xl lg:text-4xl font-bold text-primary">Toronto Electrical Experts</span>
+<p class="mt-5 lg:mt-8 text-base lg:text-lg text-primary/60 max-w-sm">Only Trust The EXPERTS!™ &mdash; the GTA's premier electrical engineering firm since 1989.</p>
+<div class="mt-6 space-y-2 text-sm lg:text-base text-primary/70 font-semibold">
+<a href="tel:+14166359494" class="flex items-center gap-2 hover:opacity-70"><span class="material-symbols-outlined text-base" data-icon="call">call</span> 416-635-9494</a>
+<a href="mailto:info@torontoelectricalexperts.com" class="flex items-center gap-2 hover:opacity-70"><span class="material-symbols-outlined text-base" data-icon="mail">mail</span> info@torontoelectricalexperts.com</a>
+<div class="flex items-start gap-2"><span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span> 45 Brisbane Road, Unit 22, Toronto, ON M3J 2K1</div>
 </div>
-<div class="mt-20 flex gap-4">
-<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white">
-<span class="material-symbols-outlined" data-icon="logo_dev">logo_dev</span>
 </div>
 </div>
-</div>
-<div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-12">
-<div class="flex flex-col gap-6">
+<div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12">
+<div class="flex flex-col gap-4 lg:gap-6">
 <span class="text-xs font-bold uppercase tracking-widest text-primary/40">Services</span>
-<a class="text-primary font-semibold hover:opacity-60" href="#">Panel Upgrades</a>
-<a class="text-primary font-semibold hover:opacity-60" href="#">Industrial Controls</a>
-<a class="text-primary font-semibold hover:opacity-60" href="#">EV Charging</a>
-<a class="text-primary font-semibold hover:opacity-60" href="#">Emergency Repair</a>
+<a class="text-primary font-semibold hover:opacity-60" href="#services">Panel Upgrades</a>
+<a class="text-primary font-semibold hover:opacity-60" href="#services">Home Automation</a>
+<a class="text-primary font-semibold hover:opacity-60" href="#services">Lighting Design</a>
+<a class="text-primary font-semibold hover:opacity-60" href="#services">Emergency Service</a>
 </div>
-<div class="flex flex-col gap-6">
-<span class="text-xs font-bold uppercase tracking-widest text-primary/40">Technical</span>
-<a class="text-primary font-semibold hover:opacity-60" href="#">Safety Audits</a>
-<a class="text-primary font-semibold hover:opacity-60" href="#">Compliance</a>
-<a class="text-primary font-semibold hover:opacity-60" href="#">Engineering Docs</a>
+<div class="flex flex-col gap-4 lg:gap-6">
+<span class="text-xs font-bold uppercase tracking-widest text-primary/40">Sectors</span>
+<a class="text-primary font-semibold hover:opacity-60" href="#services">Residential</a>
+<a class="text-primary font-semibold hover:opacity-60" href="#services">Commercial</a>
+<a class="text-primary font-semibold hover:opacity-60" href="#services">Industrial</a>
+<a class="text-primary font-semibold hover:opacity-60" href="#services">Institutional</a>
 </div>
-<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-4 lg:gap-6">
 <span class="text-xs font-bold uppercase tracking-widest text-primary/40">Social</span>
+<a class="text-primary font-semibold hover:opacity-60" href="#">Facebook</a>
 <a class="text-primary font-semibold hover:opacity-60" href="#">LinkedIn</a>
-<a class="text-primary font-semibold hover:opacity-60" href="#">Instagram</a>
-<a class="text-primary font-semibold hover:opacity-60" href="#">X</a>
+<a class="text-primary font-semibold hover:opacity-60" href="#">YouTube</a>
 </div>
 </div>
 </div>
-<div class="max-w-[1400px] mx-auto mt-32 pt-12 border-t border-primary/10 flex flex-col md:flex-row justify-between items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-primary/40">
+<div class="max-w-[1400px] mx-auto mt-16 lg:mt-32 pt-8 lg:pt-12 border-t border-primary/10 flex flex-col md:flex-row justify-between items-center gap-6 lg:gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-primary/40 text-center">
 <span>© 2026 Toronto Electrical Experts. All rights reserved.</span>
-<div class="flex gap-12">
-<span>ESA LIC #7012345</span>
+<div class="flex flex-wrap justify-center gap-6 lg:gap-12">
+<span>ECRA/ESA 701048</span>
 <span>WSIB REGISTERED</span>
 </div>
 </div>
