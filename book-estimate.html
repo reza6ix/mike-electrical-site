@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book Your Service Call | Toronto Electrical Experts</title>
+<meta name="description" content="Book your service call today with Toronto Electrical Experts. Tell us what you need and we'll get back to you with an estimate."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#003d22",
+                        "on-primary": "#ffffff",
+                        "secondary": "#34694a",
+                        "background": "#ffffff",
+                        "surface": "#f9f9ff",
+                        "surface-container-low": "#c4edc4",
+                        "surface-container-high": "#e8eeff",
+                        "on-surface": "#111c2d",
+                        "on-surface-variant": "#414942",
+                        "outline-variant": "#c0c9c0"
+                    },
+                    "borderRadius": { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2.5rem", "full": "9999px" },
+                    "spacing": { "max-width": "1400px", "section-gap": "120px", "gutter": "24px", "container-padding": "32px", "margin": "64px" },
+                    "fontFamily": {
+                        "headline": ["Source Serif 4", "serif"],
+                        "display": ["Source Serif 4", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; color: #111c2d; }
+        .font-serif-display { font-family: 'Source Serif 4', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .ease-card { border-radius: 2.5rem; overflow: hidden; }
+        @media (max-width: 1024px) { .ease-card { border-radius: 1.75rem; } }
+        .field-label { display:block; font-size:0.8rem; font-weight:700; color:#414942; margin-bottom:0.4rem; }
+        .field-input { width:100%; border-radius:0.85rem; border:1px solid #c0c9c0; background:#fff; padding:0.7rem 0.9rem; font-size:0.95rem; color:#111c2d; transition:border-color .2s, box-shadow .2s; }
+        .field-input:focus { outline:none; border-color:#003d22; box-shadow:0 0 0 3px rgba(0,61,34,0.12); }
+        .rqrd { color:#b3261e; margin-left:2px; }
+    </style>
+</head>
+<body class="antialiased">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md px-4 sm:px-6 lg:px-margin h-20 lg:h-24 flex items-center justify-between border-b border-outline-variant/30 gap-3">
+<div class="flex items-center gap-6 xl:gap-16 min-w-0">
+<a href="index.html" class="font-serif-display text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-primary tracking-tight truncate">Toronto Electrical Experts</a>
+<div class="hidden lg:flex gap-8 xl:gap-10 items-center">
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="services.html">Services</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="index.html#areas">Service Areas</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="meet-the-team.html">Meet the Team</a>
+<a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="contact-us.html">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-3 lg:gap-8 shrink-0">
+<a href="tel:+14166359494" class="hidden lg:flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<span class="text-sm font-bold text-primary">416-635-9494</span>
+</a>
+<a href="book-estimate.html" class="bg-primary text-on-primary px-4 sm:px-6 lg:px-10 py-2.5 lg:py-4 rounded-full text-xs sm:text-sm font-bold tracking-wide hover:opacity-90 transition-all active:scale-95 whitespace-nowrap">
+            <span class="sm:hidden">BOOK</span><span class="hidden sm:inline">BOOK A SERVICE</span>
+            </a>
+<button id="navToggle" aria-label="Open menu" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full text-primary hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+<div id="mobileMenu" class="hidden lg:hidden absolute top-full left-0 w-full bg-white border-b border-outline-variant/30 shadow-xl px-4 sm:px-6 py-4 flex flex-col gap-1">
+<a class="px-3 py-3 rounded-xl font-semibold text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="px-3 py-3 rounded-xl font-semibold text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" href="index.html#areas">Service Areas</a>
+<a class="px-3 py-3 rounded-xl font-semibold text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" href="meet-the-team.html">Meet the Team</a>
+<a class="px-3 py-3 rounded-xl font-semibold text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" href="contact-us.html">Contact</a>
+<a class="px-3 py-3 rounded-xl font-semibold text-primary hover:bg-surface-container-low transition-colors flex items-center gap-2" href="tel:+14166359494"><span class="material-symbols-outlined text-base" data-icon="call">call</span> 416-635-9494</a>
+</div>
+</nav>
+<main class="mt-20 lg:mt-24 pt-6 lg:pt-8 px-4 sm:px-6 lg:px-margin max-w-[1600px] mx-auto">
+<!-- Page Header -->
+<section class="ease-card bg-surface-container-low p-8 sm:p-12 lg:p-20 mb-10 lg:mb-16">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/40 text-primary font-bold text-[10px] tracking-widest uppercase mb-6 w-fit">
+<span class="material-symbols-outlined text-sm" data-icon="event_available">event_available</span>
+            BOOK A SERVICE
+        </div>
+<h1 class="font-serif-display text-4xl sm:text-5xl lg:text-[64px] leading-[1.08] lg:leading-[1.05] text-primary mb-6 max-w-3xl">
+            Book your service call today with Toronto Electrical Experts!
+        </h1>
+<p class="text-on-surface-variant text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl opacity-80">
+            Fill in the details below and we'll get back to you to confirm your appointment and provide an estimate. Prefer to talk? Call us at <a href="tel:+14166359494" class="text-primary font-semibold underline underline-offset-2">416-635-9494</a>.
+        </p>
+</section>
+<!-- Form -->
+<section class="max-w-4xl mb-16 lg:mb-24">
+<form id="bookForm" class="ease-card border border-outline-variant/40 p-6 sm:p-10 lg:p-14 space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div><label class="field-label">First Name<span class="rqrd">*</span></label><input class="field-input" type="text" name="First Name" required/></div>
+<div><label class="field-label">Last Name<span class="rqrd">*</span></label><input class="field-input" type="text" name="Last Name" required/></div>
+</div>
+<div><label class="field-label">Address<span class="rqrd">*</span></label><textarea class="field-input" name="Address" rows="2" required></textarea></div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div><label class="field-label">Postal<span class="rqrd">*</span></label><input class="field-input" type="text" name="Postal" required/></div>
+<div><label class="field-label">Province<span class="rqrd">*</span></label><input class="field-input" type="text" name="Province" required/></div>
+<div><label class="field-label">City/Town</label><input class="field-input" type="text" name="City/Town"/></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div><label class="field-label">Phone<span class="rqrd">*</span></label><input class="field-input" type="tel" name="Phone" required/></div>
+<div><label class="field-label">Email<span class="rqrd">*</span></label><input class="field-input" type="email" name="Email" required/></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div><label class="field-label">What do you require<span class="rqrd">*</span></label><input class="field-input" type="text" name="What do you require" required/></div>
+<div><label class="field-label">Best Time of Arrival<span class="rqrd">*</span></label><input class="field-input" type="text" name="Best Time of Arrival" required/></div>
+<div><label class="field-label">Date Needed</label><input class="field-input" type="date" name="Date Needed"/></div>
+</div>
+<div><label class="field-label">Project Description <span class="font-normal text-on-surface-variant/60">(brief description of the required project)</span><span class="rqrd">*</span></label><textarea class="field-input" name="Project Description" rows="4" required></textarea></div>
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pt-2">
+<div class="text-sm text-on-surface-variant max-w-sm">By submitting this form, you accept our privacy policy. We'll only use your details to respond to your enquiry.</div>
+<div class="shrink-0">
+<label class="field-label">Anti-spam: what is 3 + 8?<span class="rqrd">*</span></label>
+<input class="field-input sm:w-40" type="text" id="quiz" inputmode="numeric" required/>
+</div>
+</div>
+<!-- Honeypot -->
+<input type="text" id="company" name="company" class="hidden" tabindex="-1" autocomplete="off"/>
+<p id="formError" class="hidden text-sm font-semibold text-[#b3261e]"></p>
+<div class="flex justify-end pt-2">
+<button type="submit" class="bg-primary text-on-primary px-10 lg:px-14 py-4 lg:py-5 rounded-full text-base lg:text-lg font-bold inline-flex items-center gap-3 hover:opacity-90 transition-all active:scale-95">
+            SUBMIT <span class="material-symbols-outlined" data-icon="send">send</span>
+        </button>
+</div>
+</form>
+<p class="text-sm text-on-surface-variant/70 mt-4">Submitting opens your email app with the details pre-filled, addressed to our office. You can also email us directly at <a href="mailto:info@torontoelectricalexperts.com" class="text-primary font-semibold">info@torontoelectricalexperts.com</a>.</p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low px-5 sm:px-8 lg:px-margin py-16 lg:py-32 mt-8 lg:mt-12 rounded-t-[28px] lg:rounded-t-[40px]">
+<div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="font-serif-display text-3xl lg:text-4xl font-bold text-primary">Toronto Electrical Experts</span>
+<p class="mt-5 lg:mt-8 text-base lg:text-lg text-primary/60 max-w-sm">Only Trust The EXPERTS!™ &mdash; the GTA's premier electrical engineering firm since 1989.</p>
+<div class="mt-6 space-y-2 text-sm lg:text-base text-primary/70 font-semibold">
+<a href="tel:+14166359494" class="flex items-center gap-2 hover:opacity-70"><span class="material-symbols-outlined text-base" data-icon="call">call</span> 416-635-9494</a>
+<a href="mailto:info@torontoelectricalexperts.com" class="flex items-center gap-2 hover:opacity-70"><span class="material-symbols-outlined text-base" data-icon="mail">mail</span> info@torontoelectricalexperts.com</a>
+<div class="flex items-start gap-2"><span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span> 209 Maxwell Street, Toronto, ON</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12">
+<div class="flex flex-col gap-4 lg:gap-6">
+<span class="text-xs font-bold uppercase tracking-widest text-primary/40">Services</span>
+<a class="text-primary font-semibold hover:opacity-60" href="electrical-installation-services.html">Electrical Installation</a>
+<a class="text-primary font-semibold hover:opacity-60" href="home-automation-services.html">Home Automation</a>
+<a class="text-primary font-semibold hover:opacity-60" href="lighting-design-and-installation-services.html">Lighting Design</a>
+<a class="text-primary font-semibold hover:opacity-60" href="services.html">All Services</a>
+</div>
+<div class="flex flex-col gap-4 lg:gap-6">
+<span class="text-xs font-bold uppercase tracking-widest text-primary/40">Sectors</span>
+<a class="text-primary font-semibold hover:opacity-60" href="services.html">Residential</a>
+<a class="text-primary font-semibold hover:opacity-60" href="services.html">Commercial</a>
+<a class="text-primary font-semibold hover:opacity-60" href="services.html">Industrial</a>
+<a class="text-primary font-semibold hover:opacity-60" href="index.html#areas">Service Areas</a>
+</div>
+<div class="flex flex-col gap-4 lg:gap-6">
+<span class="text-xs font-bold uppercase tracking-widest text-primary/40">Company</span>
+<a class="text-primary font-semibold hover:opacity-60" href="meet-the-team.html">Meet the Team</a>
+<a class="text-primary font-semibold hover:opacity-60" href="contact-us.html">Contact Us</a>
+<a class="text-primary font-semibold hover:opacity-60" href="book-estimate.html">Book a Service</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1400px] mx-auto mt-16 lg:mt-32 pt-8 lg:pt-12 border-t border-primary/10 flex flex-col md:flex-row justify-between items-center gap-6 lg:gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-primary/40 text-center">
+<span>© 2026 Toronto Electrical Experts. All rights reserved.</span>
+<div class="flex flex-wrap justify-center gap-6 lg:gap-12">
+<span>ECRA/ESA 701048</span>
+<span>WSIB REGISTERED</span>
+</div>
+</div>
+</footer>
+<script>
+  (function () {
+    var t = document.getElementById('navToggle');
+    var m = document.getElementById('mobileMenu');
+    if (t && m) { t.addEventListener('click', function () { m.classList.toggle('hidden'); }); }
+
+    var form = document.getElementById('bookForm');
+    var err = document.getElementById('formError');
+    if (!form) return;
+    function showError(msg) { err.textContent = msg; err.classList.remove('hidden'); }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      err.classList.add('hidden');
+      // honeypot
+      if (document.getElementById('company').value) { return; }
+      // anti-spam quiz
+      var q = (document.getElementById('quiz').value || '').trim();
+      if (q !== '11') { showError('Please answer the anti-spam question correctly (3 + 8).'); return; }
+      if (!form.reportValidity()) { return; }
+      var fields = ['First Name','Last Name','Address','Postal','Province','City/Town','Phone','Email','What do you require','Best Time of Arrival','Date Needed','Project Description'];
+      var lines = [];
+      fields.forEach(function (name) {
+        var el = form.querySelector('[name="' + name + '"]');
+        if (el && el.value) { lines.push(name + ': ' + el.value); }
+      });
+      var subject = 'Service Booking Request';
+      var body = 'Hello Toronto Electrical Experts,\n\nI would like to book a service call. Here are my details:\n\n' + lines.join('\n') + '\n\nThank you.';
+      window.location.href = 'mailto:info@torontoelectricalexperts.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  })();
+</script>
+</body></html>
